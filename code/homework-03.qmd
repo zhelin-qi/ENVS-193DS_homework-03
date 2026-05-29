@@ -131,7 +131,7 @@ There was a statistically significant negative relationship between ocean temper
 
 ## e. Test implications
 
-For our team studying the relationship between temperature and giant kelp health: our analysis found a significant negative correlation between ocean temperature and kelp frond elongation rate (r ≈ `r round(kelp_pearson$estimate, 2)`, p < 0.05), meaning that kelp grows more slowly in warmer water. As ocean temperatures continue to rise due to climate change, we should expect a measurable decline in kelp growth rates, which has downstream consequences for the entire kelp forest ecosystem — including the many species that depend on kelp for habitat and food. This suggests that warming-driven reductions in kelp growth could pose a serious threat to the long-term stability of kelp forest communities.
+For our team studying the relationship between temperature and giant kelp health: our analysis found a significant negative correlation between ocean temperature and kelp frond elongation rate (r ≈ `r round(kelp_pearson$estimate, 2)`, p < 0.05), meaning that kelp grows more slowly in warmer water. As ocean temperatures continue to rise due to climate change, we should expect a measurable decline in kelp growth rates. This has downstream consequences for the entire kelp forest ecosystem, including the many species that depend on kelp for habitat and food. This suggests that warming-driven reductions in kelp growth could pose a serious threat to the long-term stability of kelp forest communities.
 
 ## f. Double check: Spearman's correlation
 
