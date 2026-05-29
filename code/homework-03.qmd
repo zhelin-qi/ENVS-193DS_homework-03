@@ -24,12 +24,12 @@ library(patchwork)  # combining multiple ggplot figures side by side
 # read in kelp elongation and temperature data
 kelp <- read_csv(here("data", "temp-kelp.csv"))
 
-# read in personal dog satisfaction data (skip 3 header/metadata rows)
+# read in personal dog satisfaction data
 dog <- read_csv(here("data", "dog_satisfaction_data.csv"), skip = 3) |>
   # clean column names to lowercase with underscores
   clean_names() |>
-  # keep only rows with actual observations (remove summary rows at bottom)
-  filter(!is.na(date) & date != "")
+  # keep only rows with actual observations
+  filter(!is.na(date))
 ```
 
 # Problem 1. Giant kelp fronds
@@ -81,7 +81,7 @@ p1 <- ggplot(data = kelp, aes(sample = temp_c)) +
   # add QQ points for temperature
   stat_qq() +
   # add the reference line for perfect normality
-  stat_qq_line(color = "red") +
+  stat_qq_line(color = "tomato4") +
   labs(title = "QQ plot: Ocean temperature") +
   theme_classic()
 
@@ -90,7 +90,7 @@ p2 <- ggplot(data = kelp, aes(sample = kelp_elong)) +
   # add QQ points for elongation rate
   stat_qq() +
   # add the reference line for perfect normality
-  stat_qq_line(color = "red") +
+  stat_qq_line(color = "tomato4") +
   labs(title = "QQ plot: Kelp elongation rate") +
   theme_classic()
 
@@ -249,11 +249,12 @@ For my personal dog satisfaction data, an affective visualization could take the
 
 ## b. Sketch
 
-*[Insert photo of hand-drawn sketch here. The sketch should show a week-by-week calendar grid of paw prints, sized by playtime duration and colored by satisfaction level, with weather symbols beside each day.]*
+![](C:/ENVS193DS/ENVS-193DS_homework-03/image/3b.jpg)
 
 ## c. Draft visualization
 
-*[Insert photo of draft visualization here. The draft should be the hand-drawn or physical medium version of the paw print calendar, partially complete as a work-in-progress.]*
+![](C:/ENVS193DS/ENVS-193DS_homework-03/image/3c.jpg)
+
 
 ## d. Artist statement
 
@@ -267,9 +268,8 @@ For my personal dog satisfaction data, an affective visualization could take the
 
 ## e. Slides
 
-[View slides here](https://docs.google.com/presentation/d/YOUR_SLIDES_LINK_HERE)
+[View slides here](https://docs.google.com/presentation/d/1DwT9U_u77u6Sp8FQcc_mDDAcwS7CcTZu3f7UK1583S4/edit?usp=sharing)
 
-*(Replace the link above with the actual "View" link to your Google Slides presentation before submitting.)*
 
 ---
 
@@ -279,7 +279,8 @@ For my personal dog satisfaction data, an affective visualization could take the
 
 The authors of this saltmarsh restoration paper use a **one-way ANOVA** to test whether patch size and elevation affect plant growth outcomes (including stem height, stem density, and patch expansion) in restored saltmarsh plots. The predictor variable is the treatment group — combinations of patch size (small vs. large) and elevation level — while the response variables are the various plant growth measurements. The ANOVA framework allows the authors to compare mean growth outcomes across multiple treatment groups simultaneously and determine whether observed differences are statistically significant.
 
-*[Insert figure or table from the saltmarsh restoration paper here. This is the same figure you described in Homework 2, showing plant growth responses across patch sizes and elevations.]*
+![](C:/ENVS193DS/ENVS-193DS_homework-03/image/saltmarsh.png)
+
 
 ## b. Visual clarity
 
