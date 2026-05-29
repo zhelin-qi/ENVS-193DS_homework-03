@@ -281,8 +281,6 @@ The authors of this saltmarsh restoration paper use a **one-way ANOVA** to test 
 
 ![](C:/ENVS193DS/ENVS-193DS_homework-03/image/saltmarsh.png)
 
-
-
 ## b. Visual clarity
 
 The figure clearly distinguishes between elevation groups on the x-axis and uses side-by-side bars to compare small and large patch sizes within each elevation, making the treatment structure easy to follow. The y-axis scales differ across panels (stem height, stem density, patch expansion), which is appropriate given the different units, but the authors do not show the underlying raw data points — only bar heights with error bars — which makes it harder to assess the spread and distribution of individual observations. Including jittered data points overlaid on the bars would improve transparency about the sample size and variability within each group.
